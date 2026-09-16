@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial;
+            margin: 0;
+            text-align: justify;
+        }
+
+        /* header */
+        .header img {
+            width: 100%;
+            height: 350px;
+        }
+
+        /* menu */
+        .menu {
+            background: darkorange;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100000000000;
+        }
+
+        .menu a {
+            color: white;
+            margin: 0 15px;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 35px;
+        }
+
+        .menu a:hover {
+            color: yellow;
+        }
+
+        /* danhmuc */
+        .danhmuc {
+            display: inline-block;
+            position: relative;
+        }
+
+        /* diadiem */
+        .diadiem {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 185px;
+            box-shadow: 6px 4px 12px gray;
+            border-radius: 5px;
+
+        }
+
+        .diadiem a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .diadiem a:hover {
+            background: #eee;
+        }
+
+        .danhmuc:hover .diadiem {
+            display: block;
+        }
+
+        /* noidung */
+        .noidung {
+            width: 85%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            line-height: 2;
+
+        }
+
+        h2 {
+            color: #cc5500;
+        }
+
+        /* food */
+        .food {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            transition: 0.5s;
+        }
+
+        .food:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 12px gray;
+        }
+
+        .food img {
+            border-radius: 10px;
+        }
+
+        .food .thongtin {
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .food a {
+            color: #cc5500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .food p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* footer */
+        .footer {
+            background: darkorange;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .tieude {
+            font-size: 40px;
+        }
+
+        table {
+            margin: 20px auto;
+            width: 90%;
+            border-spacing: 30px;
+        }
+
+        td.food {
+            width: "50%"
+        }
+
+        p {
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="anhbia1.jpg">
+    </div>
+
+    <div class="menu">
+        <a href="trangchu.html" style="font-size: 30px;"> Trang chủ</a>
+
+        <div class="danhmuc">
+            <a href="#" style="font-size: 30px;">Danh mục ▼</a>
+            <div class="diadiem">
+                <a href="banhmichaohoama.html">Bánh mì chảo Hòa Mã</a>
+                <a href="bunchata.html">Bún chả ta</a>
+                <a href="chobenthanh.html">Khu ẩm thực chợ Bến Thành</a>
+                <a href="phobatda37.html">Phở Bát Đá 37</a>
+                <a href="sen7quan.html">Sen7 quán</a>
+                <a href="tamvi.html">Tầm Vị</a>
+            </div>
+        </div>
+
+        <a href="gioithieu.html" style="font-size: 30px;">Giới thiệu</a>
+        <a href="lienhe.html" style="font-size: 30px;">Liên hệ</a>
+    </div>
+
+    <div class="noidung">
+        <h2 class="tieude">Vì sao bạn tìm đến chúng tôi?</h2>
+        <p style="text-indent:15px">
+            Giữa vô vàn lựa chọn ẩm thực mỗi ngày, việc tìm được một địa điểm ăn ngon, hợp túi tiền và đúng “<b>gu</b>”
+            không phải lúc nào cũng dễ dàng. Chính vì vậy, trang web này được tạo ra như một “<b>bản đồ ẩm thực</b>” thu
+            nhỏ, nơi tổng hợp những quán ăn hấp dẫn, từ những món ăn đường phố quen thuộc đến các địa điểm nổi bật được
+            nhiều người yêu thích. Không chỉ giúp bạn <b>tiết kiệm thời gian</b> tìm kiếm, chúng tôi còn mang đến những
+            gợi ý <b>chân thực</b>, giúp mỗi bữa ăn của bạn trở nên trọn vẹn và đáng nhớ hơn.
+        </p>
+        <h2 class="tieude">Chúng tôi sẽ mang đến...</h2>
+        <p style="text-indent:15px">
+            Mỗi địa điểm ăn uống đều được giới thiệu chi tiết về <b>món ăn nổi bật</b>, mức giá, không gian quán và đánh
+            giá chung. Bên cạnh đó, các hình ảnh minh họa cũng được bổ sung để người xem có cái nhìn trực quan hơn trước
+            khi quyết định ghé thăm.
+
+            Ngoài ra, trang web còn phân loại các quán theo từng nhóm như: ăn vặt, món chính, nước uống,… giúp bạn nhanh
+            chóng tìm được địa điểm phù hợp với nhu cầu của mình. Những thông tin được tổng hợp đều hướng đến sự <b>đơn
+                giản</b>, dễ hiểu và hữu ích, nhằm mang lại trải nghiệm tốt nhất cho người dùng.
+        </p>
+    </div>
+    <h2 style="text-align:center;" class="tieude">
+        🍜 Địa điểm nổi bật
+    </h2>
+    <table>
+        <tr>
+            <td class="food">
+                <div class="thongtin">
+                    <a href="banhmichaohoama.html">Bánh mì chảo Hoà Mã</a><br>
+                    <a href="banhmichaohoama.html"><img src="biabanhmi.jpg" width="350px" height="250px"
+                            style="display: block; margin: auto;"></a>
+                </div>
+            </td>
+            <td class="food">
+                <div class="thongtin">
+                    <a href="sen7quan.html">Sen7 quán</a><br>
+                    <a href="sen7quan.html"><img src="sen7.1.jpg" width="350px" height="250px"
+                            style="display: block; margin: auto;"></a><a href="sen7.1.jpg">
+                </div>
+            </td>
+
+        <tr>
+            <td class="food">
+                <div class="thongtin">
+                    <a href="bunchata.html">Bún chả ta</a><br>
+                    <a href="bunchata.html"><img src="biabuncha.jpg" width="350px" height="250px"
+                            style="display: block; margin: auto;"></a>
+                </div>
+            </td>
+            <td class="food">
+                <div class="thongtin">
+                    <a href="phobatda37.html">Phở Bát Đá 37</a><br>
+                    <a href="phobatda37.html"><img src="biapho.jpg" width="350px" height="250px"
+                            style="display: block; margin: auto;"></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="food">
+                <div class="thongtin">
+                    <a href="chobenthanh.html">Khu ẩm thực chợ Bến Thành</a><br>
+                    <a href="chobenthanh.html"><img src="chobenthanh.png" width="350px" height="250px"
+                            style="display: block; margin: auto;"></a>
+            </td>
+            </div>
+            </td>
+            <td class="food">
+                <div class="thongtin">
+                    <a href="tamvi.html">Tầm Vị</a><br>
+                    <a href="tamvi.html"><img src="biatamvi.jpg" width="350px" height="250px"
+                            style="display: block; margin: auto;"></a>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <a href="#top" style="color:#cc5500; font-size: 30px;">Về đầu trang</a>
+    <div class="footer">
+        <p>@Nhóm 10</p>
+        <p>Thiết kế bởi học sinh lớp 12A1</p>
+    </div>
+
+</body>
+
+</html>

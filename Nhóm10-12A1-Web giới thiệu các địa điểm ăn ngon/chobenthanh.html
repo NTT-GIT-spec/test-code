@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Website của Nhóm 10</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial;
+            margin: 0;
+            text-align: justify;
+        }
+
+        /* header */
+        .header img {
+            width: 100%;
+            height: 350px;
+        }
+
+        /* menu */
+        .menu {
+            background: darkorange;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100000000000;
+        }
+
+        .menu a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 35px;
+        }
+
+        .menu a:hover {
+            color: yellow;
+        }
+
+        /* danhmuc */
+        .danhmuc {
+            display: inline-block;
+            position: relative;
+        }
+
+        /* diadiem */
+        .diadiem {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 185px;
+            box-shadow: 6px 4px 12px gray;
+            border-radius: 5px;
+        }
+
+        .diadiem a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .diadiem a:hover {
+            background: #eee;
+        }
+
+        .danhmuc:hover .diadiem {
+            display: block;
+        }
+
+        /* noidung */
+        .noidung {
+            width: 85%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            line-height: 2;
+
+        }
+
+        h2 {
+            color: #cc5500;
+        }
+
+        /* food */
+        .food {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            transition: 0.5s;
+        }
+
+        .food:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 12px gray;
+        }
+
+        .food img {
+            border-radius: 10px;
+            width: 950px;
+        }
+
+        .food .thongtin {
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .food a {
+            color: #cc5500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .food p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* footer */
+        .footer {
+            background: darkorange;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .tieude {
+            font-size: 39px;
+        }
+
+        table {
+            margin: 20px auto;
+            width: "100%";
+            cellspacing: "20"
+        }
+
+        td {
+            width: "50%"
+        }
+
+        p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="anhbia1.jpg">
+    </div>
+
+    <div class="menu">
+        <a href="trangchu.html">Trang chủ</a>
+
+        <div class="danhmuc">
+            <a href="#">Danh mục ▼</a>
+            <div class="diadiem">
+                <a href="banhmichaohoama.html">Bánh mì chảo Hòa Mã</a>
+                <a href="bunchata.html">Bún chả ta</a>
+                <a href="chobenthanh.html">Khu ẩm thực chợ Bến Thành</a>
+                <a href="phobatda37.html">Phở Bát Đá 37</a>
+                <a href="sen7quan.html">Sen7 quán</a>
+                <a href="tamvi.html">Tầm Vị</a>
+            </div>
+        </div>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="lienhe.html">Liên hệ</a>
+    </div>
+
+    <div class="noidung">
+        <h2 class="tieude">Khu ẩm thực Chợ Bến Thành</h2>
+        <p style="text-indent:15px">
+            Đúng như tên gọi, khu ẩm thực chợ Bến Thành chính là nơiđáp ứng nhu cầu vui chơi ăn uống không chỉ của người
+            dân Sài Gòn mà còn cả các du khách tham quan.
+        </p>
+        <p style="text-indent:15px">
+            Chợ Bến Thành nằm ở <b>trung tâm quận 1 TPHCM</b>, được biết đến là một <b>biểu tượng lâu đời</b> về lịch sử
+            và văn hoá của Sài Gòn. Đây có thể coi là khu chợ nổi tiếng nhất Việt Nam nhờ vào hoạt động buôn bán rất
+            <b>sôi nổi với đa dạng các mặt hàng</b> cùng với đó lối kiến trúc đặc trưng của người Pháp vào thế kỉ
+            19.Ngoài những lý do nêu trên, chợ Bến Thành còn được biết đến rộng rãi nhờ vào khu ẩm thực chợ Bến Thành.
+        </p>
+        <video width="100%" height="100%" controls autoplay muted>
+            <source src="videobenthanh.mp4" type="video/mp4">
+        </video>
+        <hr>
+
+        <h2 class="tieude">Có gì đặc sắc?</h2>
+        <p style="text-indent:15px">
+            Khu ẩm thực chợ Bến Thành là <b>thiên đường ẩm thực Sài Gòn</b>, hội tụ những món ngon đặc trưng từ ba miền
+            đất nước và cả ẩm thực quốc tế, mang đến trải nghiệm ăn uống phong phú và hấp dẫn cho du khách.
+            <a href="khuanuong.png">
+                <img src="khuanuong.png" style="border-radius:10px;display: block; margin: auto;">
+            </a>
+        </p>
+        <p style="text-indent:15px">
+            Với đa dạng các món ăn như: Chè chuối nướng, bánh canh, bún mắm,… thì du khách sẽ có một trải nghiệm vô cùng
+            phong phú với ẩm thực đến từ cả <b>ba miền Bắc – Trung – Nam</b>, tất cả đều được quy tụ tại đây. Dù ngày
+            hay đêm, nơi đây vẫn luôn tấp nập náo nhiệt, không chỉ đến từ các thực khách đang tìm tòi khám phá ẩm thực
+            Việt, mà còn là những cư dân đang tìm tới những bữa ăn quen thuộc. Đây là một địa điểm không thể bỏ qua đối
+            với du khách nếu muốn có một trải nghiệm bao quát về ẩm thực Việt Nam.
+        </p>
+        <figure style="text-align: center; margin: 20px auto;">
+            <a href="bunmam.jpg">
+                <img src="bunmam.jpg" width="500px" height="260px"
+                    style="display: block; margin: auto;border-radius:10px;">
+            </a>
+            <figcaption style="font-size: 23px;">Hình 2: Bún mắm với đầy ắp topping.</figcaption>
+            <figure style="text-align: center; margin: 20px auto;">
+                <a href="bunsuong.png">
+                    <img src="bunsuong.png" width="500px" height="260px"
+                        style="display: block; margin: auto;border-radius:10px;">
+                </a>
+                <figcaption style="font-size: 23px;">Hình 3: Bún suông với chả tôm vàng ươm, thơm nức mũi.</figcaption>
+            </figure>
+            <hr>
+            <div style="text-align: left">
+                <h2 class="tieude">Thông tin liên hệ quán</h2>
+                <p>
+                    <b>Địa chỉ:</b><a href="https://maps.app.goo.gl/8xuqDqWhTACx29ET7" style="color:blue;"> Phường Bến
+                        Thành, Quận 1, Thành phố Hồ Chí Minh, Việt Nam </a>
+                </p>
+                <br>
+                <a href="#top" style="color:#cc5500; font-size: 30px;">Về đầu trang</a>
+            </div>
+    </div>
+    <div class="footer">
+        <p>@Nhóm 10</p>
+        <p>Thiết kế bởi học sinh lớp 12A1</p>
+    </div>
+</body>
+
+</html>

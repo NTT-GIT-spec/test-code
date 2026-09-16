@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tầm Vị</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial;
+            margin: 0;
+            font-size: 30px;
+            text-align: justify;
+        }
+
+        /* header */
+        .header img {
+            width: 100%;
+            height: 350px;
+        }
+
+        /* menu */
+        .menu {
+            background: darkorange;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100000000000;
+        }
+
+        .menu a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 35px;
+        }
+
+        .menu a:hover {
+            color: yellow;
+        }
+
+        /* danhmuc */
+        .danhmuc {
+            display: inline-block;
+            position: relative;
+        }
+
+        /* diadiem */
+        .diadiem {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 185px;
+            box-shadow: 6px 4px 12px gray;
+            border-radius: 5px;
+        }
+
+        .diadiem a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .diadiem a:hover {
+            background: #eee;
+        }
+
+        .danhmuc:hover .diadiem {
+            display: block;
+        }
+
+        /* noidung */
+        .noidung {
+            width: 85%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            line-height: 2;
+
+        }
+
+        h2 {
+            color: #cc5500;
+        }
+
+        /* food */
+        .food {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            transition: 0.5s;
+        }
+
+        .food:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 12px gray;
+        }
+
+        .food img {
+            border-radius: 10px;
+        }
+
+        .food .thongtin {
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .food a {
+            color: #cc5500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .food p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* footer */
+        .footer {
+            background: darkorange;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .tieude {
+            font-size: 40px;
+        }
+
+        table {
+            margin: 20px auto;
+            width: "100%";
+            cellspacing: "20"
+        }
+
+        td {
+            width: "50%"
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="anhbia1.jpg">
+    </div>
+
+    <div class="menu">
+        <a href="trangchu.html">Trang chủ</a>
+
+        <div class="danhmuc">
+            <a href="#">Danh mục ▼</a>
+            <div class="diadiem">
+                <a href="banhmichaohoama.html">Bánh mì chảo Hòa Mã</a>
+                <a href="bunchata.html">Bún chả ta</a>
+                <a href="chobenthanh.html">Khu ẩm thực chợ Bến Thành</a>
+                <a href="phobatda37.html">Phở Bát Đá 37</a>
+                <a href="sen7quan.html">Sen7 quán</a>
+                <a href="tamvi.html">Tầm Vị</a>
+            </div>
+        </div>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="lienhe.html">Liên hệ</a>
+    </div>
+
+    <div class="noidung">
+        <h2 class="tieude">Tầm Vị</h2>
+        <p style="text-indent:15px">
+            Tầm Vị - từ mâm cơm gia đình đến nhà hàng sao Michelin.
+            Khởi đầu là một nhà hàng nhỏ trên phố Yên Thế, dần dà trở thành một cái tên được <b>đông đảo thực khách lựa
+                chọn</b> khi nhớ những bửa cơm đậm đà phong vị quê nhà.
+        </p>
+        <video width="80%" height="80%" style="display: block; margin: auto;" controls autoplay muted>
+            <source src="videotamvi.mp4" type="video/mp4">
+        </video>
+        <hr>
+
+        <h2 class="tieude">Nơi đây có gì?</h2>
+        <p style="text-indent:15px">
+            Đặc biệt <b>nổi bật với món Chả Ốc</b> là món signature <b>được Michelin vinh danh đặc biệt</b>, kết hợp độc
+            đáo giữa giò heo và ốc chuối đậu. Món này được chế biến tinh tế, ăn kèm với thảo mộc tươi, bún tươi và nước
+            mắm chua ngọt có độ cân bằng hoàn hảo. Mỗi miếng chả ốc mang trong mình hương vị đậm đà của biển cả hòa
+            quyện cùng sự béo ngậy của thịt heo, tạo nên một trải nghiệm vị giác khó quên. Ngoài ra còn những món ăn
+            quen thuộc phổ biến trong bửa cơm hằng ngày của người dân Việt Nam là món canh cua nấu mướp mồng tơi hay
+            thịt rang cháy cạnh. Canh được nấu vừa vị, nước dùng thanh không bị tanh mùi cua.Thịt được ướp đậm đà mang
+            hương vị mặn ngọt vừa phải.
+
+            Mức giá dao động tại nhà hàng từ <b>200.000 - 400.000 VNĐ/ người</b>, không thuộc phân khúc bình dân nhưng
+            mới những gì nhà hàng mang lại thì hoàn toàn xứng đáng với chất lượng món ăn được mang lại.
+        </p>
+        <a href="tamvi.png"><img src="tamvi.png" width="80%" height="80%"
+                style="display: block; margin: auto;border-radius:10px;"></a>
+        <p style="text-indent:15px">
+            Không gian mang lại cảm giác an nhiên, gần gũi như căn bếp gia đình nhưng vẫn toát lên sự tinh tế và thanh
+            lịch. Mỗi chi tiết từ sàn gỗ, cầu thang đến lọ hoa đều được bài trí tỉ mỉ, tạo nên một “<b>Bắc Bộ xưa thu
+                nhỏ</b>” giữa lòng Hà Nội. Quán có khoảnh sân nhỏ nhiều cây xanh, thích hợp ngồi vào những ngày.
+        </p>
+        <a href="kgtamvi.png"><img src="kgtamvi.png" width="80%" height="80%"
+                style="display: block; margin: auto;border-radius:10px;"></a>
+        <br>
+        <p style="text-indent:15px">
+            Phục vụ trên tinh thần vô tư và chân thành tạo cảm giác thoải mái cho thực khách.Tuy nhiên bàn ghế chưa được
+            chu đáo trong những dịp đặc biệt và không gian ồn ào do lưu lượng khách đông.
+            Nhưng nhìn chung nhà hàng được <b>đánh giá khá cao</b> và là một địa điểm có thể đi cùng bạn bè, gia đình
+            cũng rất ổn. Nếu bạn quan tâm có thể liên hệ ngay đến số hotline hoặc đến trực tiếp để có cái nhìn khách
+            quan hơn nhé.Chúc bạn ngon miệng!
+        </p>
+        <hr>
+
+        <h2 class="tieude">Thông tin liên hệ quán</h2>
+        <p><b>Thời gian mở cửa :</b> 11:00-14:30, 17:00-21:30</p>
+        <p><b>SĐT:</b> 0966 323 131</p>
+        <p><b>Địa chỉ:</b> 4b P. Yên Thế, Văn Miếu – Quốc Tử Giám, Ba Đình, Hà Nội</p>
+
+
+        <a href="#top" style="color:#cc5500;"><big>Về đầu trang</big></a>
+    </div>
+    <div class="footer">
+        <p>@Nhóm 10</p>
+        <p>Thiết kế bởi học sinh lớp 12A1</p>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Phở Bát Đá 37</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial;
+            margin: 0;
+            text-align: justify;
+        }
+
+        /* header */
+        .header img {
+            width: 100%;
+            height: 350px;
+        }
+
+        /* menu */
+        .menu {
+            background: darkorange;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100000000000;
+        }
+
+        .menu a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 35px;
+        }
+
+        .menu a:hover {
+            color: yellow;
+        }
+
+        /* danhmuc */
+        .danhmuc {
+            display: inline-block;
+            position: relative;
+        }
+
+        /* diadiem */
+        .diadiem {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 185px;
+            box-shadow: 6px 4px 12px gray;
+            border-radius: 5px;
+        }
+
+        .diadiem a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .diadiem a:hover {
+            background: #eee;
+        }
+
+        .danhmuc:hover .diadiem {
+            display: block;
+        }
+
+        /* noidung */
+        .noidung {
+            width: 85%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            line-height: 2;
+
+        }
+
+        h2 {
+            color: #cc5500;
+        }
+
+        /* food */
+        .food {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            transition: 0.5s;
+        }
+
+        .food:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 12px gray;
+        }
+
+        .food img {
+            border-radius: 10px;
+        }
+
+        .food .thongtin {
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .food a {
+            color: #cc5500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .food p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* footer */
+        .footer {
+            background: darkorange;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .tieude {
+            font-size: 39px;
+        }
+
+        table {
+            margin: 20px auto;
+            width: "100%";
+            cellspacing: "20"
+        }
+
+        td {
+            width: "50%"
+        }
+
+        p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="anhbia1.jpg">
+    </div>
+
+    <div class="menu">
+        <a href="trangchu.html">Trang chủ</a>
+
+        <div class="danhmuc">
+            <a href="#">Danh mục ▼</a>
+            <div class="diadiem">
+                <a href="banhmichaohoama.html">Bánh mì chảo Hòa Mã</a>
+                <a href="bunchata.html">Bún chả ta</a>
+                <a href="chobenthanh.html">Khu ẩm thực chợ Bến Thành</a>
+                <a href="phobatda37.html">Phở Bát Đá 37</a>
+                <a href="sen7quan.html">Sen7 quán</a>
+                <a href="tamvi.html">Tầm Vị</a>
+            </div>
+        </div>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="lienhe.html">Liên hệ</a>
+    </div>
+
+    <div class="noidung">
+        <h2 class="tieude">Phở Bát Đá 37</h2>
+        <p style="text-indent:15px">
+            Phở được coi là món ăn <b>truyền thống đặc sắc</b> của nền văn hóa ẩm thực Việt Nam và đặc biệt là người dân
+            Hà Nội, thu hút lượng lớn khách du lịch đến thưởng thức và đánh giá cao. Một trong những địa nổi tiếng với
+            sự đa dạng nhưng vẫn giữ được hương vị riêng biệt của Phở là <b>Phở Đá 37</b> nằm ngay bên trong nhà hàng
+            80B Trần Phú.
+        </p>
+        <video width="80%" height="80%" style="display: block; margin: auto;" controls autoplay muted>
+            <source src="videopho37.mp4" type="video/mp4">
+        </video>
+        <hr>
+
+        <h2 class="tieude">Nơi đây có gì?</h2>
+        <p style="text-indent:15px">
+            <b>Hương vị phở truyền thốn hoà</b> mình trong phong cách hiện đại của nhà hàng. Thịt trong phở Bát Đá 37
+            đặc biệt tuyển chọn từ nạm bò hoặc gầu bò tươi ngon, thái miếng vừa đủ đem lại cảm giác mềm mộng nước, không
+            dai tạo cho nước dùng vị ngọt tự nhiên. Bánh phở trắng trong, mềm dẻo được cho vào để tăng thêm sự cân bằng
+            cho món ăn nước dùng nhanh chóng ngấm vào từng sợi phở tạo nên hương vị hoà hợp.
+
+            Mức giá dao động từ <b>85.000 VNĐ đến 950.000 VNĐ mỗi suất</b>, giá cả phù hợp với không gian quán.Giá sẽ
+            tăng hoặc giảm còn phụ thuộc vào từng loại thịt mà người dùng chọn trải nghiệm.
+        </p>
+        <a href="pho37.png"><img src="pho37.png" width="80%" height="80%"
+                style="display: block; margin: auto;border-radius:10px;"></a>
+        <p style="text-indent:15px">
+            Không gian: nằm trong khuôn viên khu biệt thự <b>sang trọng</b>, mang lại cảm giác sang trọng, ấm cúng, phù
+            hợp để đi cùng bạn bè, người thân hoặc đối tác.
+        </p>
+        <a href="kgpho37.png"><img src="kgpho37.png" width="80%" height="80%"
+                style="display: block; margin: auto;border-radius:10px;"></a>
+        <br>
+        <p style="text-indent:15px">
+            Phục vụ rất thân thiệt và sẵn sàng giúp đỡ khách hàng với thái độ vui vẻ nhưng nhìn chung giá <b>vẫn khá
+                cao</b> so đối với nhiều người
+            Nếu bạn muốn thưởng cho chính mình một món ăn có thể làm ấm bụng giữa khí trời Hà Nội vào sáng sớm hoặc đến
+            khi tối muộn bạn vẫn có thể đến để thử hãy liên hệ ngay đến số hotline hoặc đến trực tiếp trải nghiệm nhé.Hy
+            vọng bạn sẽ thích!
+        </p>
+        <hr>
+
+        <h2 class="tieude">Thông tin liên hệ quán</h2>
+        <p><b>Thời gian mở cửa: </b>06:00 – 22:00</p>
+        <p><b>Hotline:</b> 0888 22 9866</p>
+        <p><b>Địa chỉ:</b> 80B Trần Phú, P. Ba Đình, Hà Nội</p>
+
+        <a href="#top" style="color:#cc5500; font-size: 30px ;"><big>Về đầu trang</big></a>
+    </div>
+    <div class="footer">
+        <p>@Nhóm 10</p>
+        <p>Thiết kế bởi học sinh lớp 12A1</p>
+    </div>
+
+
+</body>
+
+</html>

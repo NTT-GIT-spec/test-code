@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Giới thiệu</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* header */
+        .header img {
+            width: 100%;
+            height: 350px;
+        }
+
+        /* menu */
+        .menu {
+            background: darkorange;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100000000000;
+        }
+
+        .menu a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 35px;
+        }
+
+        .menu a:hover {
+            color: yellow;
+        }
+
+        /* danhmuc */
+        .danhmuc {
+            display: inline-block;
+            position: relative;
+        }
+
+        /* diadiem */
+        .diadiem {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 185px;
+            box-shadow: 6px 4px 12px gray;
+            border-radius: 5px;
+        }
+
+        .diadiem a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .diadiem a:hover {
+            background: #eee;
+        }
+
+        .danhmuc:hover .diadiem {
+            display: block;
+        }
+
+        /* noidung */
+        .noidung {
+            width: 85%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            line-height: 2;
+            font-size: 30px;
+        }
+
+        h2 {
+            color: #cc5500;
+        }
+
+        h3 {
+            color: #cc5500;
+        }
+
+        /* food */
+        .food {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            transition: 0.5s;
+        }
+
+        .food:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 12px gray;
+        }
+
+        .food img {
+            border-radius: 10px;
+        }
+
+        .food .thongtin {
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .food a {
+            color: #cc5500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .food p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* footer */
+        .footer {
+            background: darkorange;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .tieude {
+            font-size: 30px;
+        }
+
+        table {
+            margin: 20px auto;
+            width: "100%";
+            cellspacing: "20"
+        }
+
+        td {
+            width: "50%"
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="anhbia1.jpg">
+    </div>
+
+    <div class="menu">
+        <a href="trangchu.html">Trang chủ</a>
+
+        <div class="danhmuc">
+            <a href="#">Danh mục ▼</a>
+            <div class="diadiem">
+                <a href="banhmichaohoama.html">Bánh mì chảo Hòa Mã</a>
+                <a href="sen7quan.html">Sen7 quán</a>
+                <a href="bunchata.html">Bún chả ta</a>
+                <a href="phobatda37.html">Phở Bát Đá 37</a>
+                <a href="chobenthanh.html">Khu ẩm thực chợ Bến Thành</a>
+                <a href="tamvi.html">Tầm Vị</a>
+            </div>
+        </div>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="lienhe.html">Liên hệ</a>
+    </div>
+
+    <div class="noidung">
+        <h2 style="text-align: center;">GIỚI THIỆU VỀ TRANG WEB</h2>
+
+        <h3>1. Chủ đề trang web</h3>
+        <p style="text-indent:15px; text-align: justify;">
+            Chào mừng bạn đến với trang web của chúng tôi! Trang web này được xây dựng với chủ đề chính là <b>Khám phá
+                các địa điểm ăn ngon ở Tây Ninh</b>. Vùng đất Tây Ninh không chỉ nổi tiếng với những danh lam thắng cảnh
+            mà còn mang trong mình nền ẩm thực đa dạng, phong phú với các đặc sản như bánh tráng phơi sương, muối tôm,
+            bò tơ, và vô số quán ăn địa phương hấp dẫn.
+        </p>
+
+        <h3>2. Giới thiệu thành viên</h3>
+        <p style="text-indent:15px; text-align: justify;">
+            Trang web được thực hiện nhiệt huyết bởi tập thể các thành viên <b>Nhóm 10 - Lớp 12A1</b>. Chúng tôi là
+            những học sinh có niềm đam mê to lớn với ẩm thực quê hương và mong muốn lan tỏa trải nghiệm ăn uống tuyệt
+            vời đến với mọi người. Bảng phân công nhiệm vụ:
+        </p>
+        <ul style="line-height: 1.8;">
+            <li><b>Thành viên 1:</b> Nguyễn Tấn Trường - Đảm nhiệm thiết kế và lập trình website</li>
+            <li><b>Thành viên 2:</b> Trần Kim Ngoan - Viết nội dung review</li>
+            <li><b>Thành viên 3:</b> Nguyễn Trường An - Viết nội dung review</li>
+            <li><b>Thành viên 4:</b> Nguyễn Trọng Đức - Viết nội dung review</li>
+        </ul>
+
+        <h3>3. Trang web giúp được gì và bạn sẽ biết được gì?</h3>
+        <p style="text-indent:15px; text-align: justify;">
+            <b>Mục đích (Trang web giúp được gì):</b> Chúng tôi tạo ra trang web này như một cuốn "bản đồ ẩm thực" trực
+            tuyến, giúp những ai đang sinh sống, làm việc hoặc có dịp ghé du lịch Tây Ninh có thể tiết kiệm thời gian,
+            dễ dàng tìm kiếm được những quán ăn ngon, chất lượng, đảm bảo vệ sinh và phù hợp với túi tiền thay vì phải
+            tự mình tìm tòi.
+        </p>
+        <p style="text-indent:15px; text-align: justify;">
+            <b>Thông tin mang lại (Bạn sẽ biết được gì):</b> Khi truy cập và trải nghiệm trang web của nhóm chúng tôi,
+            bạn sẽ thu được những thông tin sau:
+        </p>
+        <ul style="line-height: 1.8;">
+            <li>Địa chỉ cụ thể, thời gian mở cửa của các quán ăn đang được đánh giá cao tại Tây Ninh.</li>
+            <li>Những món ăn đặc trưng "must-try" làm nên tên tuổi của từng địa điểm.</li>
+            <li>Góc nhìn review chân thực nhất về hương vị món ăn, không gian, thái độ phục vụ và hình ảnh/video trực
+                quan.</li>
+            <li>Mức giá cả tham khảo để bạn có thể lên kế hoạch chi tiêu hợp lý nhất cho chuyến food-tour của mình.</li>
+        </ul>
+
+        <div style="text-align: left; margin-top: 20px;">
+            <a href="#top" style="color:#cc5500; font-size: 30px;">Về đầu trang</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>@Nhóm 10</p>
+        <p>Thiết kế bởi học sinh lớp 12A1</p>
+    </div>
+</body>
+
+</html>

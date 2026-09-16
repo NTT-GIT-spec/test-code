@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bánh mì chảo Hòa Mã</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial;
+            margin: 0;
+            text-align: justify;
+        }
+
+        /* header */
+        .header img {
+            width: 100%;
+            height: 350px;
+        }
+
+        /* menu */
+        .menu {
+            background: darkorange;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100000000000;
+        }
+
+        .menu a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 35px;
+        }
+
+        .menu a:hover {
+            color: yellow;
+        }
+
+        /* danhmuc */
+        .danhmuc {
+            display: inline-block;
+            position: relative;
+        }
+
+        /* diadiem */
+        .diadiem {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 185px;
+            box-shadow: 6px 4px 12px gray;
+            border-radius: 5px;
+        }
+
+        .diadiem a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .diadiem a:hover {
+            background: #eee;
+        }
+
+        .danhmuc:hover .diadiem {
+            display: block;
+        }
+
+        /* noidung */
+        .noidung {
+            width: 85%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            line-height: 2;
+
+        }
+
+        h2 {
+            color: #cc5500;
+        }
+
+        /* food */
+        .food {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+            transition: 0.5s;
+        }
+
+        .food:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 12px gray;
+        }
+
+        .food img {
+            border-radius: 10px;
+        }
+
+        .food .thongtin {
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .food a {
+            color: #cc5500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .food p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* footer */
+        .footer {
+            background: darkorange;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .tieude {
+            font-size: 35px;
+        }
+
+        table {
+            margin: 20px auto;
+            width: "100%";
+            cellspacing: "20"
+        }
+
+        td {
+            width: "50%"
+        }
+
+        p {
+            font-size: 29px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="anhbia1.jpg">
+    </div>
+
+    <div class="menu">
+        <a href="trangchu.html">Trang chủ</a>
+
+        <div class="danhmuc">
+            <a href="#">Danh mục ▼</a>
+            <div class="diadiem">
+                <a href="banhmichaohoama.html">Bánh mì chảo Hòa Mã</a>
+                <a href="bunchata.html">Bún chả ta</a>
+                <a href="chobenthanh.html">Khu ẩm thực chợ Bến Thành</a>
+                <a href="phobatda37.html">Phở Bát Đá 37</a>
+                <a href="sen7quan.html">Sen7 quán</a>
+                <a href="tamvi.html">Tầm Vị</a>
+            </div>
+        </div>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="lienhe.html">Liên hệ</a>
+    </div>
+
+    <div class="noidung">
+        <h2 class="tieude">Bánh mì chảo Hoà Mã</h2>
+        <p style="text-indent:15px">
+            Mở ra từ tận năm 1958, bánh mì Hòa Mã là một trong những tiệm bánh mì <b>lâu đời nhất ở Sài Gòn</b>. Theo
+            thời gian, quán có đôi phần thay đổi, duy chỉ có vị bánh mì là giữ nguyên bản suốt hơn nửa thế kỉ. Do đó,
+            rất nhiều người ghé quán không chỉ để thưởng thức món bánh mì chảo trứ danh, mà hơn thế là muốn tìm chút
+            hương vị của <b>Sài Gòn</b> xưa còn hoài trong ký ức.
+        </p>
+        <video width="100%" height="100%" controls autoplay muted>
+            <source src="videobanhmichao.mp4" type="video/mp4">
+        </video>
+        <br>
+        <hr>
+
+        <h2 class="tieude">Nơi đây có gì?</h2>
+        <p style="text-indent:15px">
+            Tiệm phục vụ 2 món “<b>bánh mì ốp-la đủ thứ</b>” với các nguyên liệu được chiên trong chảo và “<b>bánh mì
+                kẹp thịt</b>” với nhân là các loại thịt nguội. Thức uống cũng đơn giản không kém, chỉ có cà phê đá, cà
+            phê sữa và nước suối, trà...
+
+            Chảo thức ăn nóng hổi gồm trứng ốp la béo ngậy, pate tự làm thơm nức, thịt nguội, xúc xích, chả lụa hòa
+            quyện cùng nước tương, tương ớt và đồ chua gừng giòn sần hoà quyện tạo ra hương vị <b>cuốn hút và đặc
+                biệt</b> khó quên.
+
+            Mức giá dao động từ <b>50.000 – 75.000 VNĐ mỗi suất</b>, giá cả hợp lí phù hợp với nhiều người.
+        </p>
+        <a href="banhmichao.png"><img src="banhmichao.png" style="display: block; margin: auto;border-radius:10px;"></a>
+        <p style="text-indent:15px">
+            Không gian quán đơn giản, có thể ngồi ngoài trời hoặc vào trong không gian không quá rộng nên khách chủ yếu
+            mua mang đi
+        </p>
+        <a href="kghoama.png"><img src="kghoama.png" style="display: block; margin: auto;border-radius:10px;"></a>
+        <br>
+        <p style="text-indent:15px">
+            <b>Phục vụ nhiệt tình</b>, chủ quán thân thiện biết lắng nghe khách hàng tuy nhiên do không gian nhỏ nên
+            không thể ngồi lại ăn nếu lưu lượng khách quá đông
+            Đây là quán ăn <b>gắn bó</b> với biết bao nhiêu thế hệ người trẻ và người dân Sài Gòn. Bạn có thể thử nó khi
+            nào bạn muốn có thể liên hệ ngay với số điện thoại hoặc đến trực tiếp quán.Chúc bạn có trải nghiệm tốt nhé!
+        </p>
+        <hr>
+
+        <h2 class="tieude">Thông tin liên hệ quán</h2>
+        <p><b>Thời gian mở cửa:</b> 6:00-11:00 hằng ngày</p>
+        <p><b>SĐT: </b>090 304 2089</p>
+        <p><b>Địa chỉ: </b>54 Cao Thắng, Phường 3, Quận 3, TPHCM</p>
+        <a href="#top" style="color:#cc5500; font-size: 30px;">Về đầu trang</a>
+    </div>
+    <div class="footer">
+        <p>@Nhóm 10</p>
+        <p>Thiết kế bởi học sinh lớp 12A1</p>
+    </div>
+
+</body>
+
+</html>
